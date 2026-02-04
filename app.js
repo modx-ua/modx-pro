@@ -61,6 +61,7 @@ const translations = {
         tool_gsc_desc: "Extended traffic dashboard with charts + pages + queries + countries + devices with CSV import",
         tool_merchant_desc: "Google Merchant data dashboard with charts and CSV import",
         tool_position_desc: "Dashboard for Topvisor data export with CSV import",
+        tool_drop_desc: "Drop domain management tool with Web Archive data verification, metrics and local storage",
         footer: "Let's build something awesome ?!"
     },
     ru: {
@@ -125,6 +126,7 @@ const translations = {
         tool_gsc_desc: "Расширенный дашборд трафика с графиками + страницы + запросы + страны + устройства с импортом CSV",
         tool_merchant_desc: "Дашборд данных Google Merchant с графиками и импортом CSV",
         tool_position_desc: "Дашборд для экспорта данных Topvisor с импортом CSV",
+        tool_drop_desc: "Инструмент управления дроп-доменами с проверкой данных Web Archive, метриками и локальным хранением",
         footer: "Создадим что-то крутое вместе ?!"
     },
     uk: {
@@ -189,6 +191,7 @@ const translations = {
         tool_gsc_desc: "Розширений дашборд трафіку з графіками + сторінки + запити + країни + пристрої з імпортом CSV",
         tool_merchant_desc: "Дашборд даних Google Merchant з графіками та імпортом CSV",
         tool_position_desc: "Дашборд для експорту даних Topvisor з імпортом CSV",
+        tool_drop_desc: "Інструмент керування дроп-доменами з перевіркою даних Web Archive, метриками та локальним зберіганням",
         footer: "Створимо щось круте разом ?!"
     }
 };
