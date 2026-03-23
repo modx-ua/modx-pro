@@ -11,7 +11,7 @@ const translations = {
         tg_desc: "@modx_pro - Let's discuss your project",
         about_title: "About Me",
         about_intro: "Who I am and what I do",
-        about_1: "IT degree with 21+ years in web development, 19+ years in SEO - from the very beginning of search optimization, and 15+ years developing on MODX Revolution. I develop, optimize, and promote websites that dominate search results.<br><br>I specialize in complex YMYL niches where Google demands the highest quality — medicine, health, beauty, finance, legal services. Services, products, e-commerce.<br><br>I develop and enhance websites to meet E-E-A-T standards (Experience, Expertise, Authoritativeness, Trustworthiness).",
+        about_1: "IT degree with 21+ years in web development, 19+ years in SEO - from the very beginning of search optimization, and 15+ years developing on MODX Revolution. I develop, optimize, and promote websites that dominate search results.<br><br>I specialize in complex YMYL niches where Google demands the highest quality — medicine, health, beauty, finance, legal services. Services, products, e-commerce.<br><br>I develop and enhance websites to meet E-E-A-T standards (Experience, Expertise, Authoritativeness, Trustworthiness). I use only white-hat promotion methods, which eliminates any risks from search engines — penalties, filters, and manual actions.",
         about_2: "<strong>Full cycle SEO:</strong><br>• On-Page: content, keywords, meta tags, headings, URLs, internal linking, images<br>• Off-Page: link building, local SEO, online listings, drop domains (finding relevant expired domains, link weight transfer, backlink profile recovery)<br>• Technical: site speed, mobile-friendliness, structured data, XML sitemaps",
         about_3: "<strong>Full cycle Web Development:</strong><br>• Planning: requirements analysis, market research, architecture, competitor research, prototyping<br>• Development: MODX CMF setup, custom templates, responsive design, multilingual support<br>• Optimization: speed tuning, SEO-ready structure, security hardening<br>• Launch & Support: testing, deployment, ongoing maintenance",
         about_4: "Working with me is like finding a great dentist - once you do, you don't switch.",
@@ -76,7 +76,7 @@ const translations = {
         tg_desc: "@modx_pro - Обсудим ваш проект",
         about_title: "Обо мне",
         about_intro: "Кто я и чем занимаюсь",
-        about_1: "Высшее техническое образование в сфере IT, 21+ год в веб-разработке, 19+ лет в SEO - с самого начала зарождения поисковой оптимизации, и 15+ лет разработки на MODX Revolution. Разрабатываю, оптимизирую и продвигаю сайты, которые доминируют в поисковой выдаче.<br><br>Специализируюсь на сложных YMYL-тематиках, где Google требует максимального качества — медицина, здоровье, красота, финансы, юридические услуги. Услуги, товары, e-commerce.<br><br>Прорабатываю и улучшаю сайты в соответствии со стандартами E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness).",
+        about_1: "Высшее техническое образование в сфере IT, 21+ год в веб-разработке, 19+ лет в SEO - с самого начала зарождения поисковой оптимизации, и 15+ лет разработки на MODX Revolution. Разрабатываю, оптимизирую и продвигаю сайты, которые доминируют в поисковой выдаче.<br><br>Специализируюсь на сложных YMYL-тематиках, где Google требует максимального качества — медицина, здоровье, красота, финансы, юридические услуги. Услуги, товары, e-commerce.<br><br>Прорабатываю и улучшаю сайты в соответствии со стандартами E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness). В продвижении использую исключительно белые методы, что исключает любые риски со стороны поисковых систем — санкции, фильтры и ручные меры.",
         about_2: "<strong>Полный цикл SEO:</strong><br>• On-Page: контент, ключевые слова, мета-теги, заголовки, URL, внутренняя перелинковка, изображения<br>• Off-Page: линкбилдинг, локальное SEO, каталоги, дроп-домены (поиск релевантных истёкших доменов, перекачка ссылочного веса, восстановление ссылочного профиля)<br>• Technical: скорость сайта, мобильная адаптация, структурированные данные, XML-карты",
         about_3: "<strong>Полный цикл разработки сайта:</strong><br>• Планирование: анализ требований, анализ рынка, архитектура, исследование конкурентов, прототипирование<br>• Разработка: настройка MODX CMF, кастомные шаблоны, адаптивный дизайн, мультиязычность<br>• Оптимизация: ускорение, SEO-структура, защита безопасности<br>• Запуск и поддержка: тестирование, деплой, техническое сопровождение",
         about_4: "Работа со мной - как найти хорошего стоматолога: однажды найдёшь - больше не меняешь.",
@@ -141,7 +141,7 @@ const translations = {
         tg_desc: "@modx_pro - Обговоримо ваш проект",
         about_title: "Про мене",
         about_intro: "Хто я і чим займаюсь",
-        about_1: "Вища технічна освіта в сфері IT, 21+ рік у веб-розробці, 19+ років у SEO - з самого початку зародження пошукової оптимізації, та 15+ років розробки на MODX Revolution. Розробляю, оптимізую та просуваю сайти, які домінують у пошуковій видачі.<br><br>Спеціалізуюсь на складних YMYL-тематиках, де Google вимагає максимальної якості — медицина, здоров'я, краса, фінанси, юридичні послуги. Послуги, товари, e-commerce.<br><br>Опрацьовую та покращую сайти відповідно до стандартів E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness).",
+        about_1: "Вища технічна освіта в сфері IT, 21+ рік у веб-розробці, 19+ років у SEO - з самого початку зародження пошукової оптимізації, та 15+ років розробки на MODX Revolution. Розробляю, оптимізую та просуваю сайти, які домінують у пошуковій видачі.<br><br>Спеціалізуюсь на складних YMYL-тематиках, де Google вимагає максимальної якості — медицина, здоров'я, краса, фінанси, юридичні послуги. Послуги, товари, e-commerce.<br><br>Опрацьовую та покращую сайти відповідно до стандартів E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness). У просуванні використовую виключно білі методи, що унеможливлює будь-які ризики з боку пошукових систем — санкції, фільтри та ручні заходи.",
         about_2: "<strong>Повний цикл SEO:</strong><br>• On-Page: контент, ключові слова, мета-теги, заголовки, URL, внутрішнє перелінкування, зображення<br>• Off-Page: лінкбілдінг, локальне SEO, каталоги, дроп-домени (пошук релевантних прострочених доменів, перекачка вагової ваги посилань, відновлення ссилкового профілю)<br>• Technical: швидкість сайту, мобільна адаптація, структуровані дані, XML-карти",
         about_3: "<strong>Повний цикл розробки сайту:</strong><br>• Планування: аналіз вимог, аналіз ринку, архітектура, дослідження конкурентів, прототипування<br>• Розробка: налаштування MODX CMF, кастомні шаблони, адаптивний дизайн, мультимовність<br>• Оптимізація: прискорення, SEO-структура, захист безпеки<br>• Запуск та підтримка: тестування, деплой, технічне супроводження",
         about_4: "Робота зі мною - як знайти хорошого стоматолога: одного разу знайдеш - більше не міняєш.",
@@ -278,6 +278,45 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
     });
 });
+
+// Animated counters
+function animateCounters() {
+    const counters = document.querySelectorAll('.experience-number[data-count]');
+    if (!counters.length) return;
+
+    const easeOutQuart = t => 1 - Math.pow(1 - t, 4);
+
+    const runCounter = (el) => {
+        const target = parseInt(el.dataset.count, 10);
+        const suffix = el.dataset.suffix || '';
+        const duration = 1400;
+        const start = performance.now();
+
+        const tick = (now) => {
+            const elapsed = now - start;
+            const progress = Math.min(elapsed / duration, 1);
+            const value = Math.floor(easeOutQuart(progress) * target);
+            el.textContent = value + suffix;
+            if (progress < 1) requestAnimationFrame(tick);
+            else el.textContent = target + suffix;
+        };
+
+        requestAnimationFrame(tick);
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.dataset.animated) {
+                entry.target.dataset.animated = '1';
+                runCounter(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(el => observer.observe(el));
+}
+
+document.addEventListener('DOMContentLoaded', animateCounters);
 
 // Theme Switcher
 function toggleTheme() {
