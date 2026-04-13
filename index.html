@@ -11,6 +11,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
+    <style>
+        .stack-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+        }
+        
+        .stack-list li {
+            position: relative;
+            padding-left: 16px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            transition: color 0.2s;
+        }
+        
+        .stack-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+        
+        .stack-list li:hover {
+            color: var(--text-primary);
+        }
+        
+        [data-theme="dark"] .stack-list li::before {
+            color: #7ee787;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -120,8 +154,67 @@
                 <p data-i18n="about_2">Full cycle SEO:<br>• On-Page: content, keywords, meta tags, headings, URLs, internal linking, images<br>• Off-Page: link building, local SEO, online listings, drop domains (finding relevant expired domains, link weight transfer, backlink profile recovery)<br>• Technical: site speed, mobile-friendliness, structured data, XML sitemaps</p>
                 <p data-i18n="about_3">Full cycle Web Development:<br>• Planning: requirements analysis, market research, architecture, competitor research, prototyping<br>• Development: MODX CMF setup, custom templates, responsive design, multilingual support<br>• Optimization: speed tuning, SEO-ready structure, security hardening<br>• Launch & Support: testing, deployment, ongoing maintenance</p>
                 <p data-i18n="about_5">I don't work with these niches: escort, adult content, psychics, drugs, gambling, pyramid schemes. I don't work with CMS: WordPress, Joomla, Drupal, Bitrix, OpenCart, Tilda, Wix.</p>
+                <p data-i18n="about_6">I'm not a vibe-coder. AI is a tool, not a replacement for expertise. My work is built on 20+ years of hands-on experience, real problem-solving, and deep understanding of how things actually work under the hood.</p>
                 <p class="about-highlight" data-i18n="about_4">Working with me is like finding a great dentist - once you do, you don't switch.</p>
             </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="tech-section">
+            <div class="section-header" data-i18n="tech_title">Tech Stack</div>
+            <ul class="stack-list">
+                <li>MODX Revolution</li>
+                <li>Fenom (MODX)</li>
+                <li>pdoTools (MODX)</li>
+                <li>MIGX (MODX)</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>SASS</li>
+                <li>Compass SCSS (legacy projects)</li>
+                <li>Dart Sass</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>LD-JSON</li>
+                <li>Gulp / Webpack</li>
+                <li>Github</li>
+                <li>Nginx</li>
+                <li>Apache</li>
+                <li>Redis / Memcached</li>
+                <li>Cloudflare</li>
+                <li>SSH / SFTP</li>
+                <li>htaccess</li>
+                <li>Cron</li>
+                <li>Let's Encrypt / SSL</li>
+                <li>VS Code</li>
+                <li>Adobe Photoshop</li>
+                <li>Figma</li>
+            </ul>
+        </section>
+
+        <!-- SEO Stack -->
+        <section class="tech-section">
+            <div class="section-header" data-i18n="seo_stack_title">SEO Stack</div>
+            <ul class="stack-list">
+                <li>Ahrefs</li>
+                <li>Semrush</li>
+                <li>Moz</li>
+                <li>Majestic</li>
+                <li>SimilarWeb</li>
+                <li>Ubersuggest</li>
+                <li>Screaming Frog SEO</li>
+                <li>Topvisor</li>
+                <li>Google Search Console</li>
+                <li>Google Analytics</li>
+                <li>Google Tag Manager</li>
+                <li>Google Cloud API</li>
+                <li>PageSpeed Insights</li>
+                <li>Google Business Profile</li>
+                <li>Schema.org</li>
+                <li>OpenGraph</li>
+                <li>XML Sitemaps</li>
+            </ul>
         </section>
         </div>
 
@@ -219,136 +312,6 @@
             </div>
         </section>
 
-        <!-- Tech Stack -->
-        <section class="tech-section">
-            <div class="section-header" data-i18n="tech_title">Tech Stack</div>
-            <div class="tech-grid">
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/modx.svg" alt="MODX Revolution">
-                    <span class="tech-name">MODX Revolution</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/php.svg" alt="PHP">
-                    <span class="tech-name">PHP</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/mysql.svg" alt="MySQL">
-                    <span class="tech-name">MySQL</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/html5.svg" alt="HTML5">
-                    <span class="tech-name">HTML5</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/css3.svg" alt="CSS3">
-                    <span class="tech-name">CSS3</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/sass.svg" alt="SASS">
-                    <span class="tech-name">SASS</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/javascript.svg" alt="JavaScript">
-                    <span class="tech-name">JavaScript</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/jquery.svg" alt="jQuery">
-                    <span class="tech-name">jQuery</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/json.svg" alt="LD-JSON">
-                    <span class="tech-name">LD-JSON</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/git.svg" alt="Git">
-                    <span class="tech-name">Git</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/nginx.svg" alt="Nginx">
-                    <span class="tech-name">Nginx</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/apache.svg" alt="Apache">
-                    <span class="tech-name">Apache</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/cloudflare.svg" alt="Cloudflare">
-                    <span class="tech-name">Cloudflare</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/openapi.svg" alt="REST API">
-                    <span class="tech-name">REST API</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/vscode.svg" alt="VS Code">
-                    <span class="tech-name">VS Code</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/photoshop.svg" alt="Adobe Photoshop">
-                    <span class="tech-name">Adobe Photoshop</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/figma.svg" alt="Figma">
-                    <span class="tech-name">Figma</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- SEO Stack -->
-        <section class="tech-section">
-            <div class="section-header" data-i18n="seo_stack_title">SEO Stack</div>
-            <div class="tech-grid">
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/ahrefs.svg" alt="Ahrefs">
-                    <span class="tech-name">Ahrefs</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/semrush.svg" alt="Semrush">
-                    <span class="tech-name">Semrush</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/moz.svg" alt="Moz">
-                    <span class="tech-name">Moz</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/ubersuggest.svg" alt="Ubersuggest">
-                    <span class="tech-name">Ubersuggest</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/screaming-frog.svg" alt="Screaming Frog SEO">
-                    <span class="tech-name">Screaming Frog SEO</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/topvisor.svg" alt="Topvisor">
-                    <span class="tech-name">Topvisor</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/google-search-console.svg" alt="Google Search Console">
-                    <span class="tech-name">G. Search Console</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/google-analytics.svg" alt="Google Analytics">
-                    <span class="tech-name">G. Analytics</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/google-tag-manager.svg" alt="Google Tag Manager">
-                    <span class="tech-name">G. Tag Manager</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/google-cloud.svg" alt="Google Cloud API">
-                    <span class="tech-name">G. Cloud API</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/pagespeed-insights.svg" alt="PageSpeed Insights">
-                    <span class="tech-name">G. PageSpeed</span>
-                </div>
-                <div class="tech-item">
-                    <img class="tech-icon-img" src="img/google-business.svg" alt="Google Business">
-                    <span class="tech-name">G. Business Profile</span>
-                </div>
-            </div>
-        </section>
-
         <!-- Ready Solutions -->
         <section class="links-section solutions-section">
             <div class="section-header">
@@ -435,6 +398,14 @@
                         <span class="solution-title">Topvisor Position Dashboard</span>
                     </div>
                     <p class="solution-desc" data-i18n="tool_position_desc">Dashboard for Topvisor data export with CSV import</p>
+                </div>
+
+                <div class="solution-card-new">
+                    <div class="solution-card-header">
+                        <span class="solution-emoji">🔎</span>
+                        <span class="solution-title">MODX SimilarPages</span>
+                    </div>
+                    <p class="solution-desc" data-i18n="tool_similar_desc">Smart 404 page suggestions with recursive URL matching</p>
                 </div>
 
                 <div class="solution-card-new">
