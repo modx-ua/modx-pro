@@ -52,9 +52,21 @@
         
         .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 12px;
             margin-top: 16px;
+        }
+        
+        @media (max-width: 600px) {
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
         }
         
         .portfolio-item {
@@ -94,12 +106,6 @@
             font-size: 0.85rem;
             color: var(--text-secondary);
             margin-top: 4px;
-        }
-        
-        @media (max-width: 400px) {
-            .portfolio-grid {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
 </head>
@@ -224,22 +230,32 @@
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <span class="portfolio-emoji">🏥</span>
-                    <span class="portfolio-count">150+</span>
+                    <span class="portfolio-count">250+</span>
                     <span class="portfolio-label" data-i18n="portfolio_ymyl">YMYL (medicine, health, beauty)</span>
                 </div>
                 <div class="portfolio-item">
                     <span class="portfolio-emoji">🛒</span>
-                    <span class="portfolio-count">120+</span>
+                    <span class="portfolio-count">200+</span>
                     <span class="portfolio-label" data-i18n="portfolio_ecommerce">E-commerce</span>
                 </div>
                 <div class="portfolio-item">
                     <span class="portfolio-emoji">💼</span>
-                    <span class="portfolio-count">100+</span>
+                    <span class="portfolio-count">180+</span>
                     <span class="portfolio-label" data-i18n="portfolio_b2c">B2C services and products</span>
                 </div>
                 <div class="portfolio-item">
+                    <span class="portfolio-emoji">🚗</span>
+                    <span class="portfolio-count">120+</span>
+                    <span class="portfolio-label" data-i18n="portfolio_auto">Automotive</span>
+                </div>
+                <div class="portfolio-item">
+                    <span class="portfolio-emoji">🏠</span>
+                    <span class="portfolio-count">100+</span>
+                    <span class="portfolio-label" data-i18n="portfolio_realestate">Real estate</span>
+                </div>
+                <div class="portfolio-item">
                     <span class="portfolio-emoji">🔧</span>
-                    <span class="portfolio-count">50+</span>
+                    <span class="portfolio-count">150+</span>
                     <span class="portfolio-label" data-i18n="portfolio_other">Other industries</span>
                 </div>
             </div>
