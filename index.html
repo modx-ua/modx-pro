@@ -44,6 +44,63 @@
         [data-theme="dark"] .stack-list li::before {
             color: #7ee787;
         }
+
+        /* Portfolio Section */
+        .portfolio-section {
+            margin-bottom: 32px;
+        }
+        
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 16px;
+        }
+        
+        .portfolio-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 16px 12px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            transition: all 0.2s ease;
+        }
+        
+        .portfolio-item:hover {
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+        
+        .portfolio-emoji {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+        
+        .portfolio-count {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            line-height: 1;
+        }
+        
+        [data-theme="dark"] .portfolio-count {
+            color: #7ee787;
+        }
+        
+        .portfolio-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 4px;
+        }
+        
+        @media (max-width: 400px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -156,6 +213,35 @@
                 <p data-i18n="about_5">I don't work with these niches: escort, adult content, psychics, drugs, gambling, pyramid schemes. I don't work with CMS: WordPress, Joomla, Drupal, Bitrix, OpenCart, Tilda, Wix.</p>
                 <p data-i18n="about_6">I'm not a vibe-coder. AI is a tool, not a replacement for expertise. My work is built on 20+ years of hands-on experience, real problem-solving, and deep understanding of how things actually work under the hood.</p>
                 <p class="about-highlight" data-i18n="about_4">Working with me is like finding a great dentist - once you do, you don't switch.</p>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="portfolio-section">
+            <div class="section-header" data-i18n="portfolio_title">Portfolio</div>
+            <p class="section-intro" data-i18n="portfolio_intro">500+ successfully completed projects over 21 years, including freelance platforms</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <span class="portfolio-emoji">🏥</span>
+                    <span class="portfolio-count">150+</span>
+                    <span class="portfolio-label" data-i18n="portfolio_ymyl">YMYL (medicine, health, beauty)</span>
+                </div>
+                <div class="portfolio-item">
+                    <span class="portfolio-emoji">🛒</span>
+                    <span class="portfolio-count">120+</span>
+                    <span class="portfolio-label" data-i18n="portfolio_ecommerce">E-commerce</span>
+                </div>
+                <div class="portfolio-item">
+                    <span class="portfolio-emoji">💼</span>
+                    <span class="portfolio-count">100+</span>
+                    <span class="portfolio-label" data-i18n="portfolio_b2c">B2C services and products</span>
+                </div>
+                <div class="portfolio-item">
+                    <span class="portfolio-emoji">🔧</span>
+                    <span class="portfolio-count">50+</span>
+                    <span class="portfolio-label" data-i18n="portfolio_other">Other industries</span>
+                </div>
             </div>
         </section>
 
