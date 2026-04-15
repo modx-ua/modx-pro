@@ -72,7 +72,8 @@
     "portfolio_auto": "Automotive",
     "portfolio_realestate": "Real estate",
     "portfolio_other": "Other industries",
-    "footer": "Let's build something awesome ?!"
+    "footer": "Let's build something awesome ?!",
+    "stack_schema_note": "(templates and ready-made solutions)"
   },
   "ru": {
     "meta_title": "MODX разработчик и SEO эксперт в Киеве, Украина | 21+ год опыта",
@@ -147,7 +148,8 @@
     "portfolio_auto": "Авто",
     "portfolio_realestate": "Недвижимость",
     "portfolio_other": "Другие ниши",
-    "footer": "Создадим что-то крутое вместе ?!"
+    "footer": "Создадим что-то крутое вместе ?!",
+    "stack_schema_note": "(заготовки и готовые решения)"
   },
   "uk": {
     "meta_title": "MODX розробник та SEO експерт у Києві, Україна | 21+ рік досвіду",
@@ -222,6 +224,7 @@
     "portfolio_auto": "Авто",
     "portfolio_realestate": "Нерухомість",
     "portfolio_other": "Інші ніші",
-    "footer": "Створимо щось круте разом ?!"
+    "footer": "Створимо щось круте разом ?!",
+    "stack_schema_note": "(заготовки та готові рішення)"
   }
 }

@@ -54,14 +54,16 @@ function setLanguage(lang) {
     document.querySelector('meta[name="description"]').setAttribute('content', translations[lang].meta_desc);
     
     // Update all translatable elements
+    const htmlKeys = ['about_1', 'about_2', 'about_3', 'about_5', 'about_6'];
+
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.dataset.i18n;
-        if (translations[lang][key]) {
-            if (key === 'about_1' || key === 'about_2' || key === 'about_3' || key === 'about_5' || key === 'about_6') {
-                el.innerHTML = translations[lang][key];
-            } else {
-                el.textContent = translations[lang][key];
-            }
+        const value = translations[lang][key];
+        if (value === undefined) return;
+        if (htmlKeys.includes(key)) {
+            el.innerHTML = value;
+        } else {
+            el.textContent = value;
         }
     });
     
