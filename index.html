@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
+
+    <!-- PRELOADER -->
+    <div id="pl">
+        <div id="pl-logo"><span>@</span>modx_pro</div>
+        <div id="pl-tag">Web Development & SEO</div>
+        <div id="pl-spinner"></div>
+    </div>
+
     <div class="container">
         <!-- Switchers -->
         <div class="switchers-container">
@@ -435,6 +443,15 @@
 
 
 
+<script>
+(function () {
+    var pl = document.getElementById('pl');
+    setTimeout(function () {
+        pl.classList.add('pl-fadeout');
+        setTimeout(function () { pl.style.display = 'none'; }, 650);
+    }, 1800);
+})();
+</script>
 <script src="app.js"></script>
 
 
