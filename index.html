@@ -498,5 +498,43 @@
 <script src="app.js"></script>
 
 
+<script src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+<script>
+(function () {
+  let ctrlPressed = false;
+
+  document.addEventListener('keydown', e => {
+    if (e.ctrlKey || e.key === 'Control') {
+      ctrlPressed = true;
+    }
+  });
+
+  document.addEventListener('keyup', e => {
+    if (e.key === 'Control') {
+      ctrlPressed = false;
+    }
+  });
+
+  DisableDevtool({
+    disableMenu: true,
+    clearLog: true,
+
+    ondevtoolopen(type) {
+      if (ctrlPressed) {
+        return;
+      }
+
+      document.body.innerHTML = '<div style="display: flex; align-items: center; justify-content: center; height: 100vh; font-family: Arial, sans-serif; color: #666;">Доступ ограничен</div>';
+    }
+  });
+})();
+</script>
+
+<script>
+  window.onbeforeprint = function () {
+    document.body.innerHTML = '';
+  };
+</script>
+
 </body>
 </html>
