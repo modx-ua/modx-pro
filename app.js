@@ -20,6 +20,7 @@ const translations = {
     "exp_seo": "years in SEO",
     "exp_modx": "years with MODX",
     "exp_webdev": "years in Web Dev",
+    "exp_sites_total": "websites and edits",
     "experience_title": "Experience",
     "experience_intro": "My experience in web development and SEO promotion",
     "services_title": "Services",
@@ -65,15 +66,14 @@ const translations = {
     "tool_drop_desc": "Drop domain management tool with Web Archive data verification, metrics and local storage",
     "tool_similar_desc": "Smart 404 error handler with recursive URL matching. Suggests similar pages by parsing request path segments and searching through site hierarchy.",
     "portfolio_title": "Portfolio",
-    "portfolio_intro": "1000+ websites over 21 years, including freelance platforms. Development, improvements, SEO, fixing other specialists' mistakes.",
+    "portfolio_intro": "700+ websites and site improvements over 21 years, including freelance platforms. Development, improvements, SEO, fixing other specialists' mistakes.",
     "portfolio_ymyl": "YMYL (medicine, health, beauty)",
     "portfolio_ecommerce": "E-commerce",
     "portfolio_b2c": "B2C services and products",
     "portfolio_auto": "Automotive",
     "portfolio_realestate": "Real estate",
     "portfolio_other": "Other industries",
-    "footer": "Let's build something awesome ?!",
-    "stack_schema_note": "(ready-made solutions)"
+    "footer_location": "Ukraine, Kyiv"
   },
   "ru": {
     "meta_title": "MODX разработчик и SEO эксперт в Киеве, Украина | 21+ год опыта",
@@ -96,6 +96,7 @@ const translations = {
     "exp_seo": "лет в SEO",
     "exp_modx": "лет с MODX",
     "exp_webdev": "лет в Web Dev",
+    "exp_sites_total": "сайтов и правок",
     "experience_title": "Опыт",
     "experience_intro": "Мой опыт в разработке и SEO продвижении сайтов",
     "services_title": "Услуги",
@@ -141,15 +142,14 @@ const translations = {
     "tool_drop_desc": "Инструмент управления дроп-доменами с проверкой данных Web Archive, метриками и локальным хранением",
     "tool_similar_desc": "Умный обработчик ошибок 404 с рекурсивным поиском по URL. Предлагает похожие страницы, анализируя сегменты пути и структуру сайта.",
     "portfolio_title": "Портфолио",
-    "portfolio_intro": "1000+ сайтов за 21 год, включая фриланс-биржи. Разработка, доработки, SEO, исправление ошибок других специалистов.",
+    "portfolio_intro": "700+ сайтов и доработок за 21 год, включая фриланс-биржи. Разработка, доработки, SEO, исправление ошибок других специалистов.",
     "portfolio_ymyl": "YMYL (медицина, здоровье, красота)",
     "portfolio_ecommerce": "E-commerce",
     "portfolio_b2c": "B2C услуги и продукты",
     "portfolio_auto": "Авто",
     "portfolio_realestate": "Недвижимость",
     "portfolio_other": "Другие ниши",
-    "footer": "Создадим что-то крутое вместе ?!",
-    "stack_schema_note": "(готовые решения)"
+    "footer_location": "Украина, Киев"
   },
   "uk": {
     "meta_title": "MODX розробник та SEO експерт у Києві, Україна | 21+ рік досвіду",
@@ -172,6 +172,7 @@ const translations = {
     "exp_seo": "років у SEO",
     "exp_modx": "років з MODX",
     "exp_webdev": "років у Web Dev",
+    "exp_sites_total": "сайтів і правок",
     "experience_title": "Досвід",
     "experience_intro": "Мій досвід у розробці та SEO просуванні сайтів",
     "services_title": "Послуги",
@@ -217,15 +218,14 @@ const translations = {
     "tool_drop_desc": "Інструмент керування дроп-доменами з перевіркою даних Web Archive, метриками та локальним зберіганням",
     "tool_similar_desc": "Розумний обробник помилок 404 з рекурсивним пошуком по URL. Пропонує схожі сторінки, аналізуючи сегменти шляху та структуру сайту.",
     "portfolio_title": "Портфоліо",
-    "portfolio_intro": "1000+ сайтів за 21 рік, включаючи фріланс-біржі. Розробка, доопрацювання, SEO, виправлення помилок інших спеціалістів.",
+    "portfolio_intro": "700+ сайтів і доопрацювань за 21 рік, включаючи фріланс-біржі. Розробка, доопрацювання, SEO, виправлення помилок інших спеціалістів.",
     "portfolio_ymyl": "YMYL (медицина, здоров'я, краса)",
     "portfolio_ecommerce": "E-commerce",
     "portfolio_b2c": "B2C послуги та продукти",
     "portfolio_auto": "Авто",
     "portfolio_realestate": "Нерухомість",
     "portfolio_other": "Інші ніші",
-    "footer": "Створимо щось круте разом ?!",
-    "stack_schema_note": "(готові рішення)"
+    "footer_location": "Україна, Київ"
   }
 };
 
@@ -321,8 +321,38 @@ function toggleTheme() {
     localStorage.setItem('theme', newTheme);
 }
 
-// Initialize theme
-document.addEventListener('DOMContentLoaded', () => {
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    document.documentElement.setAttribute('data-theme', savedTheme);
-});
+// Theme is initialized via inline <script> in <head> to avoid FOUC.
+
+// Profile logo ring — smooth spin-up on hover
+(function () {
+    const logo = document.querySelector('.profile-logo');
+    if (!logo) return;
+
+    const SPEED_IDLE = 360 / 14;   // deg per second (slow, ~14s per turn)
+    const SPEED_HOVER = 360 / 2.5; // deg per second (fast, ~2.5s per turn)
+    const EASE = 1.8;              // higher = snappier ramp-up/down
+
+    let angle = 0;
+    let speed = SPEED_IDLE;
+    let target = SPEED_IDLE;
+    let last = performance.now();
+
+    logo.addEventListener('mouseenter', () => { target = SPEED_HOVER; });
+    logo.addEventListener('mouseleave', () => { target = SPEED_IDLE; });
+
+    function tick(now) {
+        const dt = Math.min(0.05, (now - last) / 1000);
+        last = now;
+        speed += (target - speed) * Math.min(1, dt * EASE);
+        angle = (angle + speed * dt) % 360;
+        logo.style.setProperty('--ring-angle', angle.toFixed(2) + 'deg');
+        requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+})();
+
+// Footer year
+(function () {
+    const el = document.getElementById('footer-year');
+    if (el) el.textContent = new Date().getFullYear();
+})();
