@@ -71,7 +71,7 @@
         <!-- Profile Header -->
         <header class="profile">
             <div class="profile-logo">
-                <img src="modx.jpg" alt="MODX Logo">
+                <img src="logo.jpg" alt="MODX Logo">
             </div>
             <h1 class="username">@modx_pro</h1>
             <p class="bio" data-i18n="bio">Web Development & SEO on MODX CMF</p>
@@ -246,266 +246,244 @@
             </ul>
         </section>
 
-        <!-- Services -->
+        <!-- Services & Solutions -->
         <section class="links-section">
             <div class="section-header" data-i18n="services_title">Services</div>
             <p class="section-intro" data-i18n="services_intro">My services for your business</p>
 
-            <div class="link-card">
-                <div class="link-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            <div class="srv-list">
+
+                <!-- Web Dev -->
+                <div class="link-card srv-card" onclick="toggleService(this)">
+                    <div class="srv-row">
+                        <div class="link-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <div class="link-content">
+                            <div class="link-title" data-i18n="srv_web_title">Web Development</div>
+                            <div class="link-description" data-i18n="srv_web_desc">Fast, flexible MODX websites with multilingual support (EN, RU, UK)</div>
+                        </div>
+                        <svg class="srv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="srv-detail">
+                        <div class="srv-detail-wrap">
+                            <div class="srv-detail-text" data-i18n="srv_web_detail"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="link-content">
-                    <div class="link-title" data-i18n="srv_web_title">Web Development</div>
-                    <div class="link-description" data-i18n="srv_web_desc">Fast, flexible MODX websites with multilingual support (EN, RU, UK)</div>
+
+                <!-- Security -->
+                <div class="link-card srv-card" onclick="toggleService(this)">
+                    <div class="srv-row">
+                        <div class="link-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <div class="link-content">
+                            <div class="link-title" data-i18n="srv_security_title">Security & Server Administration</div>
+                            <div class="link-description" data-i18n="srv_security_desc">Hosting and VPS administration, spam and bot elimination, network-level blocking, client data protection</div>
+                        </div>
+                        <svg class="srv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="srv-detail">
+                        <div class="srv-detail-wrap">
+                            <div class="srv-detail-text" data-i18n="srv_security_detail"></div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Automation -->
+                <div class="link-card srv-card" onclick="toggleService(this)">
+                    <div class="srv-row">
+                        <div class="link-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                        </div>
+                        <div class="link-content">
+                            <div class="link-title" data-i18n="srv_auto_title">Automation &amp; Integrations</div>
+                            <div class="link-description" data-i18n="srv_auto_desc">Eliminating manual operations through scripts and service integrations</div>
+                        </div>
+                        <svg class="srv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="srv-detail">
+                        <div class="srv-detail-wrap">
+                            <div class="srv-detail-text" data-i18n="srv_auto_detail"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Support -->
+                <div class="link-card srv-card" onclick="toggleService(this)">
+                    <div class="srv-row">
+                        <div class="link-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                        </div>
+                        <div class="link-content">
+                            <div class="link-title" data-i18n="srv_support_title">Technical Support</div>
+                            <div class="link-description" data-i18n="srv_support_desc">Ongoing maintenance and support for your websites</div>
+                        </div>
+                        <svg class="srv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="srv-detail">
+                        <div class="srv-detail-wrap">
+                            <div class="srv-detail-text" data-i18n="srv_support_detail"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SEO -->
+                <div class="link-card srv-card" onclick="toggleService(this)">
+                    <div class="srv-row">
+                        <div class="link-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+                        </div>
+                        <div class="link-content">
+                            <div class="link-title" data-i18n="srv_seo_title">SEO</div>
+                            <div class="link-description" data-i18n="srv_seo_desc">Search Engine Optimization – drive organic traffic &amp; dominate search results</div>
+                        </div>
+                        <svg class="srv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="srv-detail">
+                        <div class="srv-detail-wrap">
+                            <div class="srv-detail-text" data-i18n="srv_seo_detail"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Local SEO -->
+                <div class="link-card srv-card" onclick="toggleService(this)">
+                    <div class="srv-row">
+                        <div class="link-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <div class="link-content">
+                            <div class="link-title" data-i18n="srv_local_title">Local SEO</div>
+                            <div class="link-description" data-i18n="srv_local_desc">Business presence in Google local pack</div>
+                        </div>
+                        <svg class="srv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="srv-detail">
+                        <div class="srv-detail-wrap">
+                            <div class="srv-detail-text" data-i18n="srv_local_detail"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Schema.org -->
+                <div class="link-card srv-card" onclick="toggleService(this)">
+                    <div class="srv-row">
+                        <div class="link-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5a2 2 0 0 0 2 2h1"></path><path d="M16 21h1a2 2 0 0 0 2-2v-5a2 2 0 0 1 2-2 2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"></path></svg>
+                        </div>
+                        <div class="link-content">
+                            <div class="link-title" data-i18n="srv_schema_title">Schema.org Markup</div>
+                            <div class="link-description" data-i18n="srv_schema_desc">Structured data for any business type and location</div>
+                        </div>
+                        <svg class="srv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="srv-detail">
+                        <div class="srv-detail-wrap">
+                            <div class="srv-detail-text" data-i18n="srv_schema_detail"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drop Domains -->
+                <div class="link-card srv-card" onclick="toggleService(this)">
+                    <div class="srv-row">
+                        <div class="link-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                        </div>
+                        <div class="link-content">
+                            <div class="link-title" data-i18n="srv_drop_title">Drop Domains</div>
+                            <div class="link-description" data-i18n="srv_drop_desc">Expired domains, SEO weight transfer, Google penalty removal &amp; diagnostics</div>
+                        </div>
+                        <svg class="srv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="srv-detail">
+                        <div class="srv-detail-wrap">
+                            <div class="srv-detail-text" data-i18n="srv_drop_detail"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LLMO -->
+                <div class="link-card srv-card" onclick="toggleService(this)">
+                    <div class="srv-row">
+                        <div class="link-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="14" rx="2"></rect><rect x="9" y="10" width="6" height="4"></rect><line x1="9" y1="2" x2="9" y2="5"></line><line x1="15" y1="2" x2="15" y2="5"></line><line x1="9" y1="19" x2="9" y2="22"></line><line x1="15" y1="19" x2="15" y2="22"></line><line x1="20" y1="9" x2="22" y2="9"></line><line x1="20" y1="15" x2="22" y2="15"></line><line x1="2" y1="9" x2="4" y2="9"></line><line x1="2" y1="15" x2="4" y2="15"></line></svg>
+                        </div>
+                        <div class="link-content">
+                            <div class="link-title" data-i18n="srv_llmo_title">AI Search &amp; LLMO</div>
+                            <div class="link-description" data-i18n="srv_llmo_desc">Optimizing your content for AI-driven search</div>
+                        </div>
+                        <svg class="srv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="srv-detail">
+                        <div class="srv-detail-wrap">
+                            <div class="srv-detail-text" data-i18n="srv_llmo_detail"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Analytics -->
+                <div class="link-card srv-card" onclick="toggleService(this)">
+                    <div class="srv-row">
+                        <div class="link-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg>
+                        </div>
+                        <div class="link-content">
+                            <div class="link-title" data-i18n="srv_analytics_title">Analytics &amp; Conversions</div>
+                            <div class="link-description" data-i18n="srv_analytics_desc">Data-driven insights that support growth and measurable results</div>
+                        </div>
+                        <svg class="srv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="srv-detail">
+                        <div class="srv-detail-wrap">
+                            <div class="srv-detail-text" data-i18n="srv_analytics_detail"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Merchant -->
+                <div class="link-card srv-card" onclick="toggleService(this)">
+                    <div class="srv-row">
+                        <div class="link-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                        </div>
+                        <div class="link-content">
+                            <div class="link-title" data-i18n="srv_merchant_title">Google Merchant & Meta Shopping</div>
+                            <div class="link-description" data-i18n="srv_merchant_desc">Full automation of product feed generation and validation</div>
+                        </div>
+                        <svg class="srv-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div class="srv-detail">
+                        <div class="srv-detail-wrap">
+                            <div class="srv-detail-text" data-i18n="srv_merchant_detail"></div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="link-card">
-                <div class="link-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
-                </div>
-                <div class="link-content">
-                    <div class="link-title" data-i18n="srv_drop_title">Drop Domains & Recovery</div>
-                    <div class="link-description" data-i18n="srv_drop_desc">Expired domains, SEO weight transfer, Google penalty removal & diagnostics</div>
-                </div>
-            </div>
-
-            <div class="link-card">
-                <div class="link-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
-                </div>
-                <div class="link-content">
-                    <div class="link-title" data-i18n="srv_seo_title">SEO</div>
-                    <div class="link-description" data-i18n="srv_seo_desc">Search Engine Optimization - drive organic traffic & dominate search results</div>
-                </div>
-            </div>
-
-            <div class="link-card">
-                <div class="link-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                </div>
-                <div class="link-content">
-                    <div class="link-title" data-i18n="srv_local_title">Local Search Pack & GEO SEO</div>
-                    <div class="link-description" data-i18n="srv_local_desc">Regional visibility through local pack and Generative Engine Optimization</div>
-                </div>
-            </div>
-
-            <div class="link-card">
-                <div class="link-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="14" rx="2"></rect><rect x="9" y="10" width="6" height="4"></rect><line x1="9" y1="2" x2="9" y2="5"></line><line x1="15" y1="2" x2="15" y2="5"></line><line x1="9" y1="19" x2="9" y2="22"></line><line x1="15" y1="19" x2="15" y2="22"></line><line x1="20" y1="9" x2="22" y2="9"></line><line x1="20" y1="15" x2="22" y2="15"></line><line x1="2" y1="9" x2="4" y2="9"></line><line x1="2" y1="15" x2="4" y2="15"></line></svg>
-                </div>
-                <div class="link-content">
-                    <div class="link-title" data-i18n="srv_llmo_title">LLMO</div>
-                    <div class="link-description" data-i18n="srv_llmo_desc">Preparing your content for AI-driven search and assistants</div>
-                </div>
-            </div>
-
-            <div class="link-card">
-                <div class="link-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
-                </div>
-                <div class="link-content">
-                    <div class="link-title" data-i18n="srv_mobile_title">Mobile Optimization</div>
-                    <div class="link-description" data-i18n="srv_mobile_desc">Perfect user experience across all screen sizes and devices</div>
-                </div>
-            </div>
-
-            <div class="link-card">
-                <div class="link-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                </div>
-                <div class="link-content">
-                    <div class="link-title" data-i18n="srv_security_title">Security</div>
-                    <div class="link-description" data-i18n="srv_security_desc">Protecting your website, data and users</div>
-                </div>
-            </div>
-
-            <div class="link-card">
-                <div class="link-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-                </div>
-                <div class="link-content">
-                    <div class="link-title" data-i18n="srv_merchant_title">Google Merchant & Shopping Ads</div>
-                    <div class="link-description" data-i18n="srv_merchant_desc">Boosting the performance and reach of your online store</div>
-                </div>
-            </div>
-
-            <div class="link-card">
-                <div class="link-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg>
-                </div>
-                <div class="link-content">
-                    <div class="link-title" data-i18n="srv_analytics_title">Analytics & Conversion</div>
-                    <div class="link-description" data-i18n="srv_analytics_desc">Data-driven insights that support growth and measurable results</div>
-                </div>
-            </div>
-
-            <div class="link-card">
-                <div class="link-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-                </div>
-                <div class="link-content">
-                    <div class="link-title" data-i18n="srv_auto_title">Business Automation</div>
-                    <div class="link-description" data-i18n="srv_auto_desc">Simplifying and optimizing your operational workflows</div>
-                </div>
-            </div>
-
-            <div class="link-card">
-                <div class="link-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
-                </div>
-                <div class="link-content">
-                    <div class="link-title" data-i18n="srv_support_title">Technical Support</div>
-                    <div class="link-description" data-i18n="srv_support_desc">Ongoing maintenance and support for your websites</div>
-                </div>
-            </div>
         </section>
 
-        <!-- Ready Solutions -->
-        <section class="links-section solutions-section">
-            <div class="section-header">
-                <span data-i18n="solutions_title">Ready Solutions</span>
-            </div>
-            <p class="section-intro" data-i18n="solutions_intro">My own tools and personal development projects</p>
+        <section class="links-section">
+            <div class="section-header" data-i18n="contacts_title">Contacts</div>
 
-            <div class="solutions-grid">
-                <div class="link-card">
-                    <div class="link-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                    </div>
-                    <div class="link-content">
-                        <div class="link-title">MODX CultureKey Generator</div>
-                        <div class="link-description" data-i18n="tool_culture_desc">Multilingual routing generator with CSV import</div>
-                    </div>
+            <a href="https://t.me/modx_pro" target="_blank" rel="noopener" class="link-card footer-telegram-cta">
+                <div class="link-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
                 </div>
-
-                <div class="link-card">
-                    <div class="link-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
-                    </div>
-                    <div class="link-content">
-                        <div class="link-title">MODX Redirects Generator (404 errors)</div>
-                        <div class="link-description" data-i18n="tool_redirects_desc">Bulk 301 redirects from CSV import</div>
-                    </div>
+                <div class="link-content">
+                    <div class="link-title" data-i18n="tg_title">Contact on Telegram</div>
+                    <div class="link-description" data-i18n="tg_desc">@modx_pro - Let's discuss your project</div>
                 </div>
-
-                <div class="link-card">
-                    <div class="link-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path></svg>
-                    </div>
-                    <div class="link-content">
-                        <div class="link-title">MODX Keywords Generator</div>
-                        <div class="link-description" data-i18n="tool_keywords_desc">Auto-generate keywords sorted by page frequency for schema markup</div>
-                    </div>
-                </div>
-
-                <div class="link-card">
-                    <div class="link-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                    </div>
-                    <div class="link-content">
-                        <div class="link-title">MODX CacheOptimizer</div>
-                        <div class="link-description" data-i18n="tool_cache_desc">HTTP caching headers for browsers/CDN + asset versioning (CSS, JS, images)</div>
-                    </div>
-                </div>
-
-                <div class="link-card">
-                    <div class="link-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
-                    </div>
-                    <div class="link-content">
-                        <div class="link-title" data-i18n="tool_snippets_title">Snippets & Plugins</div>
-                        <div class="link-description" data-i18n="tool_snippets_desc">Custom solutions to improve site performance and workflow automation in MODX CMF</div>
-                    </div>
-                </div>
-
-                <div class="link-card">
-                    <div class="link-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
-                    </div>
-                    <div class="link-content">
-                        <div class="link-title" data-i18n="tool_ldjson_title">LD-JSON Templates</div>
-                        <div class="link-description" data-i18n="tool_ldjson_desc">Extended templates & presets for Local Search Pack schema markup</div>
-                    </div>
-                </div>
-
-                <div class="link-card">
-                    <div class="link-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"></line><line x1="18" y1="20" x2="18" y2="4"></line><line x1="6" y1="20" x2="6" y2="16"></line></svg>
-                    </div>
-                    <div class="link-content">
-                        <div class="link-title">Google Analytics Dashboard</div>
-                        <div class="link-description" data-i18n="tool_ga_desc">Traffic insights dashboard with CSV import</div>
-                    </div>
-                </div>
-
-                <div class="link-card">
-                    <div class="link-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                    </div>
-                    <div class="link-content">
-                        <div class="link-title">Google Search Console Dashboard</div>
-                        <div class="link-description" data-i18n="tool_gsc_desc">Performance monitoring with CSV import</div>
-                    </div>
-                </div>
-
-                <div class="link-card">
-                    <div class="link-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
-                    </div>
-                    <div class="link-content">
-                        <div class="link-title">Google Merchant Dashboard</div>
-                        <div class="link-description" data-i18n="tool_merchant_desc">Shopping data visualization with CSV import</div>
-                    </div>
-                </div>
-
-                <div class="link-card">
-                    <div class="link-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
-                    </div>
-                    <div class="link-content">
-                        <div class="link-title">Topvisor Position Dashboard</div>
-                        <div class="link-description" data-i18n="tool_position_desc">Dashboard for Topvisor data export with CSV import</div>
-                    </div>
-                </div>
-
-                <div class="link-card">
-                    <div class="link-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><circle cx="11.5" cy="14.5" r="2"></circle><line x1="13" y1="16" x2="14.5" y2="17.5"></line></svg>
-                    </div>
-                    <div class="link-content">
-                        <div class="link-title">MODX SimilarPages</div>
-                        <div class="link-description" data-i18n="tool_similar_desc">Smart 404 page suggestions with recursive URL matching</div>
-                    </div>
-                </div>
-
-                <div class="link-card">
-                    <div class="link-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
-                    </div>
-                    <div class="link-content">
-                        <div class="link-title">Drop Domain Tool</div>
-                        <div class="link-description" data-i18n="tool_drop_desc">Drop domain management tool with Web Archive verification, metrics and local storage</div>
-                    </div>
-                </div>
-            </div>
+                <span class="link-arrow">&rarr;</span>
+            </a>
         </section>
-
-        <a href="https://t.me/modx_pro" target="_blank" rel="noopener" class="link-card footer-telegram-cta">
-            <div class="link-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-            </div>
-            <div class="link-content">
-                <div class="link-title" data-i18n="tg_title">Contact on Telegram</div>
-                <div class="link-description" data-i18n="tg_desc">@modx_pro - Let's discuss your project</div>
-            </div>
-            <span class="link-arrow">&rarr;</span>
-        </a>
 
         <footer class="footer">
             <div class="footer-location" data-i18n="footer_location">Ukraine, Kyiv</div>
-            <div class="footer-text">2005 — <span id="footer-year">2026</span></div>
+            <div class="footer-text">2005 – <span id="footer-year">2026</span></div>
         </footer>
 
     </div>
